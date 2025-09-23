@@ -191,7 +191,8 @@ def get_warped_feats(x, y, disp_range_samples, ndisp):
     x_warped = x.unsqueeze(2).repeat(1, 1, ndisp, 1, 1) #(B, C, D, H, W)
     x_warped = x_warped.transpose(0, 1) #(C, B, D, H, W)
     #x1 = x2 + d >= d
-    x_warped[:, mw < disp_range_samples] = 0
+    mask = mw < disp_range_samples
+    x_warped = torch.where(mask.unsqueeze(0), torch.zeros_like(x_warped), x_warped)
     x_warped = x_warped.transpose(0, 1) #(B, C, D, H, W)
 
     return x_warped, y_warped
@@ -340,6 +341,7 @@ class Propagation_prob(nn.Module):
 
         prob_volume = self.replicationpad(prob_volume)
         prob_volume_propa = F.conv3d(prob_volume, one_hot_filter,padding=0)
+
 
 
         return prob_volume_propa
