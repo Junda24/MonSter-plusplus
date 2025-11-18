@@ -99,10 +99,13 @@ MonSter：
 }
 
 MonSter++：
-@article{cheng2025monster,
-  title={MonSter: Marry Monodepth to Stereo Unleashes Power},
-  author={Cheng, Junda and Liu, Longliang and Xu, Gangwei and Wang, Xianqi and Zhang, Zhaoxing and Deng, Yong and Zang, Jinliang and Chen, Yurui and Cai, Zhipeng and Yang, Xin},
-  journal={arXiv preprint arXiv:2501.08643},
-  year={2025}
+@misc{cheng2025monsterunifiedstereomatching,
+      title={MonSter++: Unified Stereo Matching, Multi-view Stereo, and Real-time Stereo with Monodepth Priors}, 
+      author={Junda Cheng and Wenjing Liao and Zhipeng Cai and Longliang Liu and Gangwei Xu and Xianqi Wang and Yuzhou Wang and Zikang Yuan and Yong Deng and Jinliang Zang and Yangyang Shi and Jinhui Tang and Xin Yang},
+      year={2025},
+      eprint={2501.08643},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.08643}, 
 }
 ```
