@@ -16,6 +16,7 @@ MonSter++: Unified Stereo Matching, Multi-view Stereo, and Real-time Stereo with
 </div>
 
 ## News 
+- `[2025/12]` The most often asked about the issue: ONNX and tensorRT export problems: can be reference to https://github.com/Junda24/MonSter-plusplus/pull/4
 - `[2025/9]` We have open-sourced our lightweight real-time model RT-MonSter++
 - `[2025/9]` Weights for RT-MonSter++ model released!
 - `[2025/10]` We have open-sourced our accuracy model MonSter++
