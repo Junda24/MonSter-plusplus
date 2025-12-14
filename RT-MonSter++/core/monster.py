@@ -29,7 +29,7 @@ def get_cur_disp_range_samples(cur_disp, ndisp, disp_interval_pixel, shape):
     #cur_disp: (B, H, W)
     #return disp_range_samples: (B, D, H, W)
 
-    w = cur_disp.shape[2]
+    w = float(cur_disp.shape[2])
     # cur_disp_min = (cur_disp - ndisp / 2 * disp_interval_pixel)  # (B, H, W)
     # cur_disp_max = (cur_disp + ndisp / 2 * disp_interval_pixel)
     cur_disp_min = (cur_disp - ndisp / 2 * disp_interval_pixel).clamp(min=0.0)   #(B, H, W)
