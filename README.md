@@ -16,7 +16,7 @@ MonSter++: Unified Stereo Matching, Multi-view Stereo, and Real-time Stereo with
 </div>
 
 # 🚀 RT-MonSter++ 🚀 
-- `[2025/12]` We release the ONNX and TensorRT export and conversion scripts for RT-MonSter++, facilitating efficient real-time inference on mobile platforms.
+- `[2025/12]` We release the ONNX and TensorRT export and conversion scripts for RT-MonSter++, enabling efficient inference on mobile and edge devices. Further optimizations are planned, including integrating techniques from DepthAnything to further improve efficiency.
 - <img width="600" height="450" alt="45a82bb73e85fb4a66ade8bd3c441b48" src="https://github.com/user-attachments/assets/c34a5e24-8327-4b61-9e17-66d286e2be2c" />
 
 ## News 
